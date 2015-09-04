@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
-		<?php $title="DLC-QD1" ?>
+		<!--DGideas Server Status version 1.0-->
+		<?php $title="Your Server Name" ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -22,7 +23,6 @@
 		<div class="container">
 			<nav class="navbar navbar-inverse navbar-fixed-top">
 			  <div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
 			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 			        <span class="sr-only">Toggle navigation</span>
@@ -36,8 +36,7 @@
 						      <ul class="nav navbar-nav">
 			        <li class="active"><a <?php //href="#" ?>><?php print($GLOBALS["title"]); ?><span class="sr-only">(current)</span></a></li>
 			      </ul>
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			  </div><!-- /.container-fluid -->
+			  </div>
 			</nav>
 			<h1>System Release</h1>
 			<pre>
