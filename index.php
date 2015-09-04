@@ -31,11 +31,8 @@
 			        <span class="icon-bar"></span>
 			      </button>
 				  <span class="glyphicon glyphicon-object-align-left navbar-brand" aria-hidden="true"></span> 
-			      <a class="navbar-brand" href="#">Server Status</a>
+			      <a class="navbar-brand"><?php print($GLOBALS["title"]); ?></a>
 			    </div>
-						      <ul class="nav navbar-nav">
-			        <li class="active"><a <?php //href="#" ?>><?php print($GLOBALS["title"]); ?><span class="sr-only">(current)</span></a></li>
-			      </ul>
 			  </div>
 			</nav>
 			<h1>System Release</h1>
