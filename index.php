@@ -36,20 +36,11 @@
 			  </div>
 			</nav>
 			<h1>System Release</h1>
-			<pre>
-			<?php passthru('uname -a'); ?>
-			<?php passthru('ver'); ?>
-			</pre>
+			<pre><?php passthru('uname -a'); ?><?php passthru('ver'); ?></pre>
 			<h1>Disk Usage</h1>
-			<pre>
-			<?php passthru('df -h'); ?>
-			<?php passthru('systeminfo'); ?>
-			</pre>
+			<pre><?php passthru('df -h'); ?><?php passthru('systeminfo'); ?></pre>
 			<h1>Process Info</h1>
-			<pre>
-			<?php passthru('ps -e'); ?>
-			<?php passthru('tasklist'); ?>
-			</pre>
+			<pre><?php passthru('ps -e'); ?><?php passthru('tasklist'); ?></pre>
 	</div>
 	</body>
 </html>
