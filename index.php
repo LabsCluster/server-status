@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
-		<!--DGideas Server Status version 1.0-->
+		<?php //DGideas Server Status 1.1 ?>
 		<?php $title="Your Server Name" ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta charset="utf-8">
@@ -15,7 +15,7 @@
 		<style type="text/css">
 		body { 
 			padding-top: 70px;
-			font-family: 微软雅黑light,微软雅黑,方正细等线,方正等线,华文细黑,等线,黑体;
+			font-family: consolas,consola,微软雅黑light,微软雅黑;
 		 }
 		</style>
 	</head>
@@ -35,11 +35,13 @@
 			    </div>
 			  </div>
 			</nav>
-			<h1>System Release</h1>
+			<h1>Server Status</h1>
+			<hr />
+			<h2>System Info</h2>
 			<pre><?php passthru('uname -a'); ?><?php passthru('ver'); ?></pre>
-			<h1>Disk Usage</h1>
+			<h2>Disk Usage</h2>
 			<pre><?php passthru('df -Th'); ?><?php passthru('systeminfo'); ?></pre>
-			<h1>Process Info</h1>
+			<h2>Process Info</h2>
 			<pre><?php passthru('ps -e'); ?><?php passthru('tasklist'); ?></pre>
 	</div>
 	</body>
