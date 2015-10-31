@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 	<head>
 		<?php //DGideas Server Status 1.1 ?>
-		<?php $title="Your Server Name" ?>
+		<?php $title="Server_name" ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -35,7 +35,7 @@
 			    </div>
 			  </div>
 			</nav>
-			<h1>Server Status</h1>
+			<h1><?php print($GLOBALS["title"]); ?> >> Server Status</h1>
 			<hr />
 			<h2>System Info</h2>
 			<pre><?php passthru('uname -a'); ?><?php passthru('ver'); ?></pre>
