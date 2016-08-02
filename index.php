@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
-		<?php //DGideas Server Status 1.1 ?>
-		<?php $title="Server_name" ?>
+		<?php //DGideas Server Status 1.2 ?>
+		<?php $title="Server name" ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -29,14 +29,16 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
-			      </button>
-				  <span class="glyphicon glyphicon-object-align-left navbar-brand" aria-hidden="true"></span> 
-			      <a class="navbar-brand"><?php print($GLOBALS["title"]); ?></a>
-			    </div>
-			  </div>
+					</button>
+					<span class="glyphicon glyphicon-object-align-left navbar-brand" aria-hidden="true"></span> 
+				<a class="navbar-brand"><?php print($GLOBALS["title"]); ?></a>
+				</div>
+				</div>
 			</nav>
 			<h1><?php print($GLOBALS["title"]); ?> >> Server Status</h1>
 			<hr />
+			<h2>System Temperature</h2>
+			<pre><?php passthru('cat /sys/class/thermal/thermal_zone0/temp'); ?></pre>
 			<h2>System Info</h2>
 			<pre><?php passthru('uname -a'); ?><?php passthru('ver'); ?></pre>
 			<h2>Disk Usage</h2>
